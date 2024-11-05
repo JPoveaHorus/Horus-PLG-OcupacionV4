@@ -1,0 +1,115 @@
+{
+    "configuration": {
+        "type": "static",
+        "script": "HUB:plg.plugin_ocupacion/configs/account",
+        "placement": "device,plugin",
+        "inputs": [
+            {
+                "name": "itemId Sensor de movimiento batt",
+                "description": "Registra itemId del Sensor de movimiento batt",
+                "required": false,
+                "field": "sensor_movbatt",
+                "type": "string"
+            },
+            {
+                "name": "itemId Sensor de movimiento elec",
+                "description": "Registra itemId del Sensor de movimiento elec",
+                "required": false,
+                "field": "sensor_movelec",
+                "type": "string"
+            },
+            {
+                "name": "itemId Actuadores On",
+                "description": "colocar item_id dispositivos a on",
+                "required": false,
+                "field": "actuadores_on",
+                "type": "string"
+            },
+            {
+                "name": "itemId Actuadores Off",
+                "description": "colocar item_id dispositivos a on",
+                "required": false,
+                "field": "actuadores_off",
+                "type": "string"
+            },
+            {
+                "name": "itemId Sensor de Puerta",
+                "description": "colocar item_id del sensor de puerta",
+                "required": false,
+                "field": "sensor_puerta",
+                "type": "string"
+                
+            },
+            {
+                "name": "deviceId thermostato",
+                "description": "Registra deviceId del Sensor de movimiento elec",
+                "required": false,
+                "field": "Aire",
+                "type": "string"
+                
+            },
+            {
+                "name": "SetPoint On thermostato",
+                "description": "Registra SetPoint ON del thermostato",
+                "required": false,
+                "field": "SetpointOn",
+                "type": "int"
+                
+            },
+            {
+                "name": "SetPoint Off thermostato",
+                "description": "Registra SetPoint OFF del thermostato",
+                "required": false,
+                "field": "SetpointOff",
+                "type": "int"
+                
+            },
+            {
+                "name": "Modo SetPoint",
+                "description": "Registra si desea subir el Setpoint del termostato al pasar a Libre",
+                "required": false,
+                "field": "ModoSetpoint",
+                "type": "string"
+                
+            },
+            {
+                "name": "Encendido Termostato",
+                "description": "Registra si desea activacion de termostato",
+                "required": false,
+                "field": "motionActivator",
+                "type": "string"
+                
+            },
+            {
+                "name": "Off puerta Abierta",
+                "description": "Registra si desea que el sistema apage por evento de puerta abierta",
+                "required": false,
+                "field": "offPuertaAbierta",
+                "type": "string"
+                
+            },
+            {
+                "name": "Disparador Luces",
+                "description": "Registra si desea activacion de Luces por disparo de Movimiento o Actuadores",
+                "required": false,
+                "field": "masterSwitch",
+                "type": "string"
+                
+            },
+            {
+                "name": "Tiempo Sensor de Movimiento",
+                "description": "Registra el tiempo estimado de deteccion del Sensor de Movimiento",
+                "required": true,
+                "field": "TiempoScan",
+                "type": "int"  
+            },
+            {
+                "name": "Password",
+                "description": "Account Password",
+                "required": true,
+                "field": "password",
+                "type": "string"
+            }
+        ]
+    }
+}
